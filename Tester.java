@@ -10,6 +10,21 @@ public class Tester{
     System.out.println(Radix.length(-10));
     System.out.println(Radix.length(5112));
 
+    SortableLinkedList empty = new SortableLinkedList();
+    Radix.radixSortSimple(empty);
+    System.out.println(empty);
+
+    SortableLinkedList test1 = new SortableLinkedList();
+    test1.add(100000);
+    test1.add(10000);
+    test1.add(1000);
+    test1.add(100);
+    test1.add(10);
+    test1.add(1);
+    test1.add(0);
+    Radix.radixSortSimple(test1);
+    System.out.println(test1);
+
     SortableLinkedList list1 = new SortableLinkedList();
     Random rngSeed = new Random();
     int seed = rngSeed.nextInt();
