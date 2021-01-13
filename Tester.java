@@ -199,5 +199,15 @@ public class Tester{
     System.out.println(list2);
     System.out.println(list8);
     System.out.println(list9);
+    /*
+    SortableLinkedList errorDebug = new SortableLinkedList();
+    Random rng = new Random(846);
+    Integer c;
+    for (int i = 0; i < 100000; i++) {
+         c = rng.nextInt();
+         errorDebug.add(c);
+    }
+    Radix.radixSort(errorDebug);
+    */
   }
 }
